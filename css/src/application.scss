@@ -1,0 +1,335 @@
+/*
+  Femme.
+    file: css/src/application.sass
+*/
+
+@import "lib/base";
+
+
+/*
+  I. Universal
+*/
+
+body {
+  background: $base;
+  color: $text;
+  font: 18px/1.75em $serif;
+}
+
+a {
+  border-bottom: 3px solid darken($light-grey, 5%);
+  color: $text;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+h1 {
+  @include adjust-font-size-to(2em);
+
+  font-family: $display;
+  text-transform: lowercase;
+
+  a {
+    border: none;
+    color: $text;
+
+    &:hover {
+      color: lighten($text, 15%);
+    }
+
+    &:after {
+      content: ".";
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+
+  &.avatar {
+    @include border-radius(50%);
+  }
+}
+
+figure {
+  figcaption.copyright {
+    @include adjust-font-size-to(10px);
+
+    color: darken($light-grey, 5%);
+    font-family: $sans-serif;
+    line-height: 10px;
+  }
+}
+
+p + p {
+  text-indent: 2em;
+}
+
+span.logo {
+  font-family: $display;
+  text-transform: lowercase;
+}
+
+
+/*
+  II. Header
+*/
+
+header#header {
+  @include container;
+
+  margin-bottom: rhythm(0.5);
+  margin-top: rhythm(2);
+
+  section {
+    @include span(6 of 12);
+  }
+
+  nav {
+    @include span(last 6 of 12);
+    // @include omega;
+
+    letter-spacing: 0.5px;
+    font-family: $sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    a {
+      border: none;
+      color: $grey;
+
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+
+    ul {
+      @include adjust-font-size-to(12px);
+
+      float: right;
+      margin-top: rhythm(1);
+
+      li {
+        display: inline-block;
+        // line-height: 5rem;
+
+        & + li {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}
+
+
+/*
+  III. Main
+*/
+
+main {
+  .featured {
+    article {
+      section {
+        @include container;
+
+        header {
+          @include span(12 of 12);
+
+          margin-bottom: rhythm(1);
+          margin-top: rhythm(1);
+
+          h2 {
+            @include adjust-font-size-to(36px);
+
+            a {
+              border: none;
+            }
+          }
+
+          .meta {
+            @include adjust-font-size-to(14px);
+
+            color: $grey;
+            font-family: $sans-serif;
+
+            a {
+              color: $grey;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    background: $text;
+    color: $base;
+    margin: rhythm(2) auto;
+    text-align: center;
+
+    .inner {
+      @include container;
+      // margin: rhythm(2) auto;
+      padding: rhythm(5);
+    }
+
+    section {
+      @include span(last 12 of 12);
+    }
+
+    h2 {
+      @include adjust-font-size-to(36px);
+
+      span {
+        font-family: $display;
+      }
+    }
+
+    p {
+      font-family: $sans-serif;
+    }
+  }
+
+  .non-featured {
+    @include container;
+    // @include leading-border(1px, 2);
+
+    border-top: 1px solid $light-grey;
+    margin-top: rhythm(1);
+
+    article {
+      @include span(6 of 12);
+
+      &:last-child {
+          @include omega;
+      }
+
+      header {
+        margin-bottom: rhythm(0.5);
+
+        h2 {
+          @include adjust-font-size-to(24px);
+
+          line-height: 1rem;
+          margin: rhythm(0.5) 0 rhythm(0.15);
+
+          a {
+            border: none;
+          }
+        }
+
+        .meta {
+          @include adjust-font-size-to(12px);
+
+          color: $grey;
+          font-family: $sans-serif;
+
+          a {
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include container;
+
+    margin-top: rhythm(2);
+
+    nav {
+      @include span(last 12 of 12);
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+
+        &.newer {
+          float: left;
+        }
+
+        &.older {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .page {
+    @include container;
+
+    margin-top: rhythm(2);
+
+    header {
+      margin-bottom: rhythm(1);
+
+      h2 {
+        @include adjust-font-size-to(24px);
+
+        // font-family: $sans-serif;
+        // text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+footer#footer {
+  @include leading-border(1px, 1);
+
+  border-color: $light-grey;
+  color: $grey;
+  margin-top: rhythm(4);
+  margin-bottom: rhythm(2);
+
+  a {
+    border: none;
+  }
+
+  .inner {
+    @include container;
+  }
+
+  section {
+    @include adjust-font-size-to(14px);
+    @include span(8 of 12);
+  }
+
+  nav {
+    @include span(last 4 of 12);
+
+    a {
+      &.twitter:hover {
+        color: $twitter;
+      }
+
+      &.facebook:hover {
+        color: $facebook;
+      }
+
+      &.instagram:hover {
+        color: $instagram;
+      }
+
+      &.rss:hover {
+        color: $rss;
+      }
+    }
+
+    ul {
+      float: right;
+
+      li {
+        display: inline-block;
+
+        & + li {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}

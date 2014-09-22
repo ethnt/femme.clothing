@@ -1,0 +1,15 @@
+a.btn {
+  @include border-radius(15px);
+  @include adjust-font-size-to(14px);
+
+  border: 1px solid $light-grey;
+  color: $dark-grey;
+  display: inline-block;
+  font-family: $sans-serif;
+  padding: rhythm(0.15) rhythm(0.5);
+
+  &:hover {
+    border-color: $grey;
+    color: $text;
+  }
+}

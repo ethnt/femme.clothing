@@ -1,0 +1,19 @@
+// Femme.
+//   file: css/src/lib/includes/_colors.sass
+
+$base: #fefefe;
+
+$text: #333333;
+
+$light-grey: #f2f2ee;
+$grey: darken($light-grey, 15%);
+$dark-grey: darken($grey, 10%);
+
+$green: #09b778;
+
+$primary: $green;
+
+$facebook: #3b5998;
+$twitter: #55acee;
+$instagram: #4b799f;
+$rss: #ef683e;

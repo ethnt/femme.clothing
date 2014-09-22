@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*
+  Femme.
+    file: css/src/application.sass
+*/
 /* line 5, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,4 +66,736 @@ a img {
 /* line 116, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/*
+https://typekit.com/fonts/freight-big-pro
+https://typekit.com/fonts/calluna
+https://typekit.com/fonts/abril-titling-narrow
+https://typekit.com/fonts/freight-display-pro
+https://typekit.com/fonts/kepler-std
+*/
+/* line 1, src/lib/modules/_buttons.scss */
+a.btn {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  border: 1px solid #f2f2ee;
+  color: #bbbba6;
+  display: inline-block;
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 0.225em 0.75em;
+}
+/* line 11, src/lib/modules/_buttons.scss */
+a.btn:hover {
+  border-color: #d1d1c3;
+  color: #333333;
+}
+
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2013 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-social-regular.css" rel="stylesheet" />
+*/
+@font-face {
+  font-family: "SSSocialRegular";
+  src: url("/webfonts/ss-social-regular/ss-social-regular.eot");
+  src: url("/webfonts/ss-social-regular/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("/webfonts/ss-social-regular/ss-social-regular.woff") format("woff"), url("/webfonts/ss-social-regular/ss-social-regular.ttf") format("truetype"), url("/webfonts/ss-social-regular/ss-social-regular.svg#SSSocialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+/* line 25, src/lib/vendor/_ss-social-regular.scss */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1;
+}
+
+/* line 27, src/lib/vendor/_ss-social-regular.scss */
+.ss-icon, .ss-icon.ss-social-regular,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-social-regular:before, [class*=" ss-"].ss-social-regular:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-social-regular.right:after, [class*=" ss-"].ss-social-regular.right:after {
+  font-family: "SSSocialRegular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 47, src/lib/vendor/_ss-social-regular.scss */
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
+  display: none;
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-facebook:before, .ss-facebook.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-twitter:before, .ss-twitter.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-linkedin:before, .ss-linkedin.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-googleplus:before, .ss-googleplus.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-appdotnet:before, .ss-appdotnet.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-zerply:before, .ss-zerply.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-reddit:before, .ss-reddit.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-steam:before, .ss-steam.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-tumblr:before, .ss-tumblr.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-wordpress:before, .ss-wordpress.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-blogger:before, .ss-blogger.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-posterous:before, .ss-posterous.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-quora:before, .ss-quora.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-youtube:before, .ss-youtube.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-vimeo:before, .ss-vimeo.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-vine:before, .ss-vine.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-letterboxd:before, .ss-letterboxd.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-flickr:before, .ss-flickr.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-instagram:before, .ss-instagram.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-500px:before, .ss-500px.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-etsy:before, .ss-etsy.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-pinterest:before, .ss-pinterest.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-svpply:before, .ss-svpply.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-readmill:before, .ss-readmill.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-dropbox:before, .ss-dropbox.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-pinboard:before, .ss-pinboard.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-delicious:before, .ss-delicious.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-dribbble:before, .ss-dribbble.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-behance:before, .ss-behance.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-github:before, .ss-github.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-octocat:before, .ss-octocat.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-stackoverflow:before, .ss-stackoverflow.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-paypal:before, .ss-paypal.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-kickstarter:before, .ss-kickstarter.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-foursquare:before, .ss-foursquare.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-yelp:before, .ss-yelp.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-skype:before, .ss-skype.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-rdio:before, .ss-rdio.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-spotify:before, .ss-spotify.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-lastfm:before, .ss-lastfm.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-soundcloud:before, .ss-soundcloud.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-link:before, .ss-link.right:after {
+  content: '🔗';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-phone:before, .ss-phone.right:after {
+  content: '📞';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-mail:before, .ss-mail.right:after {
+  content: '✉';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-like:before, .ss-like.right:after {
+  content: '👍';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-rss:before, .ss-rss.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-share:before, .ss-share.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-apple:before, .ss-apple.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-microsoft:before, .ss-microsoft.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-windows:before, .ss-windows.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-android:before, .ss-android.right:after {
+  content: '';
+}
+
+/* line 50, src/lib/vendor/_ss-social-regular.scss */
+.ss-blackberry:before, .ss-blackberry.right:after {
+  content: '';
+}
+
+/* Legacy */
+/* line 53, src/lib/vendor/_ss-social-regular.scss */
+.ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
+  content: '';
+}
+
+/*
+  I. Universal
+*/
+/* line 13, src/application.scss */
+body {
+  background: #fefefe;
+  color: #333333;
+  font: 18px/1.75em "garamond-premier-pro", Times New Roman, Times, serif;
+}
+
+/* line 19, src/application.scss */
+a {
+  border-bottom: 3px solid #e7e7e0;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 24, src/application.scss */
+a:hover {
+  color: #09b778;
+}
+
+/* line 29, src/application.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
+  text-transform: lowercase;
+}
+/* line 35, src/application.scss */
+h1 a {
+  border: none;
+  color: #333333;
+}
+/* line 39, src/application.scss */
+h1 a:hover {
+  color: #595959;
+}
+/* line 43, src/application.scss */
+h1 a:after {
+  content: ".";
+}
+
+/* line 49, src/application.scss */
+img {
+  max-width: 100%;
+}
+/* line 52, src/application.scss */
+img.avatar {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 58, src/application.scss */
+figure figcaption.copyright {
+  font-size: 0.625em;
+  line-height: 2.4em;
+  color: #e7e7e0;
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 10px;
+}
+
+/* line 67, src/application.scss */
+p + p {
+  text-indent: 2em;
+}
+
+/* line 71, src/application.scss */
+span.logo {
+  font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
+  text-transform: lowercase;
+}
+
+/*
+  II. Header
+*/
+/* line 81, src/application.scss */
+header#header {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.75em;
+  margin-top: 3em;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+header#header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 87, src/application.scss */
+header#header section {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 91, src/application.scss */
+header#header nav {
+  width: 48.57143%;
+  float: right;
+  margin-right: 0;
+  letter-spacing: 0.5px;
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* line 100, src/application.scss */
+header#header nav a {
+  border: none;
+  color: #d1d1c3;
+}
+/* line 104, src/application.scss */
+header#header nav a:hover {
+  color: #bbbba6;
+}
+/* line 109, src/application.scss */
+header#header nav ul {
+  font-size: 0.75em;
+  line-height: 2em;
+  float: right;
+  margin-top: 1.5em;
+}
+/* line 115, src/application.scss */
+header#header nav ul li {
+  display: inline-block;
+}
+/* line 119, src/application.scss */
+header#header nav ul li + li {
+  margin-left: 1em;
+}
+
+/*
+  III. Main
+*/
+/* line 135, src/application.scss */
+main .featured article section {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+main .featured article section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 138, src/application.scss */
+main .featured article section header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+/* line 144, src/application.scss */
+main .featured article section header h2 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+}
+/* line 147, src/application.scss */
+main .featured article section header h2 a {
+  border: none;
+}
+/* line 152, src/application.scss */
+main .featured article section header .meta {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  color: #d1d1c3;
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* line 158, src/application.scss */
+main .featured article section header .meta a {
+  color: #d1d1c3;
+}
+/* line 167, src/application.scss */
+main .hero {
+  background: #333333;
+  color: #fefefe;
+  margin: 3em auto;
+  text-align: center;
+}
+/* line 173, src/application.scss */
+main .hero .inner {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7.5em;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+main .hero .inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 179, src/application.scss */
+main .hero section {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+/* line 183, src/application.scss */
+main .hero h2 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+}
+/* line 186, src/application.scss */
+main .hero h2 span {
+  font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
+}
+/* line 191, src/application.scss */
+main .hero p {
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* line 196, src/application.scss */
+main .non-featured {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #f2f2ee;
+  margin-top: 1.5em;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+main .non-featured:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 203, src/application.scss */
+main .non-featured article {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 206, src/application.scss */
+main .non-featured article:last-child {
+  float: right;
+  margin-right: 0;
+}
+/* line 210, src/application.scss */
+main .non-featured article header {
+  margin-bottom: 0.75em;
+}
+/* line 213, src/application.scss */
+main .non-featured article header h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  line-height: 1rem;
+  margin: 0.75em 0 0.225em;
+}
+/* line 219, src/application.scss */
+main .non-featured article header h2 a {
+  border: none;
+}
+/* line 224, src/application.scss */
+main .non-featured article header .meta {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: #d1d1c3;
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* line 230, src/application.scss */
+main .non-featured article header .meta a {
+  color: #d1d1c3;
+}
+/* line 238, src/application.scss */
+main footer {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+main footer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 243, src/application.scss */
+main footer nav {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+/* line 246, src/application.scss */
+main footer nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+/* line 250, src/application.scss */
+main footer nav li.newer {
+  float: left;
+}
+/* line 254, src/application.scss */
+main footer nav li.older {
+  float: right;
+}
+/* line 261, src/application.scss */
+main .page {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+main .page:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 266, src/application.scss */
+main .page header {
+  margin-bottom: 1.5em;
+}
+/* line 269, src/application.scss */
+main .page header h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+/* line 281, src/application.scss */
+footer#footer {
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 1.4375em;
+  border-color: #f2f2ee;
+  color: #d1d1c3;
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+/* line 289, src/application.scss */
+footer#footer a {
+  border: none;
+}
+/* line 293, src/application.scss */
+footer#footer .inner {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+footer#footer .inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 297, src/application.scss */
+footer#footer section {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  width: 65.71429%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 302, src/application.scss */
+footer#footer nav {
+  width: 31.42857%;
+  float: right;
+  margin-right: 0;
+}
+/* line 306, src/application.scss */
+footer#footer nav a.twitter:hover {
+  color: #55acee;
+}
+/* line 310, src/application.scss */
+footer#footer nav a.facebook:hover {
+  color: #3b5998;
+}
+/* line 314, src/application.scss */
+footer#footer nav a.instagram:hover {
+  color: #4b799f;
+}
+/* line 318, src/application.scss */
+footer#footer nav a.rss:hover {
+  color: #ef683e;
+}
+/* line 323, src/application.scss */
+footer#footer nav ul {
+  float: right;
+}
+/* line 326, src/application.scss */
+footer#footer nav ul li {
+  display: inline-block;
+}
+/* line 329, src/application.scss */
+footer#footer nav ul li + li {
+  margin-left: 1em;
 }

@@ -1,0 +1,124 @@
+/*
+  Femme.
+    file: css/src/lib/modules/_post.scss
+*/
+
+article.post {
+  header {
+    h2 {
+      a {
+        border: none;
+      }
+    }
+
+    .meta {
+      @include adjust-font-size-to(14px);
+
+      color: $grey;
+      font-family: $sans-serif;
+
+      a {
+        color: $grey;
+      }
+    }
+  }
+
+  &.featured, &.non-featured {
+    a.btn.small {
+      display: inline;
+    }
+  }
+
+  &.featured {
+    section {
+      @include container;
+
+      header {
+        @include span(12 of 12);
+
+        margin-bottom: rhythm(1);
+        margin-top: rhythm(1);
+
+        h2 {
+          @include adjust-font-size-to(36px);
+
+          a {
+            border: none;
+          }
+        }
+
+      }
+    }
+  }
+
+  &.non-featured {
+    @include container;
+
+    & + article {
+      @include leading-border(1px, 1);
+
+      border-color: $light-grey;
+      margin-top: rhythm(0.75);
+    }
+
+    figure {
+      @include span(4 of 12);
+
+      img {
+        overflow: hidden;
+      }
+    }
+
+    section {
+      @include span(last 8 of 12);
+
+      margin-top: rhythm(0.25);
+    }
+
+    header {
+      margin-bottom: rhythm(0.5);
+
+      h2 {
+        @include adjust-font-size-to(24px);
+
+        line-height: 1rem;
+        margin: rhythm(0.15) 0 rhythm(0.15);
+
+        a {
+          border: none;
+        }
+      }
+
+    }
+  }
+
+  &.single {
+    figure {
+      background: black;
+      text-align: center;
+
+      a {
+        display: block;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    section {
+      @include container;
+
+      margin-top: rhythm(2);
+
+      header {
+        margin-bottom: rhythm(1);
+
+        h2 {
+          @include adjust-font-size-to(36px);
+        }
+      }
+    }
+  }
+}

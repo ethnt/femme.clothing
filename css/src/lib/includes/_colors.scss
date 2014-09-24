@@ -1,15 +1,17 @@
-// Femme.
-//   file: css/src/lib/includes/_colors.sass
+/*
+	Femme.
+		file: css/src/lib/includes/_colors.sass
+*/
 
 $base: #fefefe;
 
 $text: #333333;
 
+$green: #09b778;
+
 $light-grey: #f2f2ee;
 $grey: darken($light-grey, 15%);
 $dark-grey: darken($grey, 10%);
-
-$green: #09b778;
 
 $primary: $green;
 

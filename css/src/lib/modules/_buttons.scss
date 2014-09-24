@@ -1,3 +1,8 @@
+/*
+    Femme.
+        file: css/src/lib/modules/_buttons.scss
+*/
+
 a.btn {
   @include border-radius(15px);
   @include adjust-font-size-to(14px);
@@ -10,6 +15,25 @@ a.btn {
 
   &:hover {
     border-color: $grey;
-    color: $text;
+    color: $dark-grey;
+  }
+
+  &.small {
+    @include adjust-font-size-to(10px);
+
+    line-height: 1.25em;
+    position: relative;
+    bottom: rhythm(0.2);
+    padding: rhythm(0.01) rhythm(0.3);
+  }
+
+  &.white {
+    border-color: $grey;
+    color: $light-grey;
+
+    &:hover {
+      border-color: $light-grey;
+      color: $base;
+    }
   }
 }

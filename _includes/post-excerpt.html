@@ -1,0 +1,28 @@
+{% capture tags %}
+  {% for tag in current.taxonomy.tags %}
+    <a href="{{ tag.url }}">{{ tag.value | capitalize }}</a>
+  {% endfor %}
+{% endcapture %}
+
+<article class="post {{ type }}">
+  {% for asset in current.assets limit:1 %}
+    <figure>
+      <a href="{{ current.url }}">
+        <img src="{{ asset.url }}" />
+      </a>
+    </figure>
+  {% endfor %}
+  <section>
+    <header>
+      <h2><a href="{{ current.url }}">{{ current.title }}</a></h2>
+      <div class="meta">
+        <p><span class="author">{{ current.author.fullname }}</span> on <span class="timestamp">{{ current.date | date: "%A, %B %-d, %Y" }}</span> in {{ tags }}</p>
+      </div>
+    </header>
+    {% if type == 'featured' %}
+      {{ current.body | truncatewords: 90 }} <a class="btn small" href="{{ current.url }}">Read &raquo;</a>
+    {% else %}
+      {{ current.body | truncatewords: 18 }} <a class="btn small" href="{{ current.url }}">Read &raquo;</a>
+    {% endif %}
+  </section>
+</article>

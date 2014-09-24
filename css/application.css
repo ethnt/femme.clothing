@@ -69,13 +69,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*
+	Femme.
+		file: css/src/lib/includes/_fonts.sass
+*/
+/*
 https://typekit.com/fonts/freight-big-pro
 https://typekit.com/fonts/calluna
 https://typekit.com/fonts/abril-titling-narrow
 https://typekit.com/fonts/freight-display-pro
 https://typekit.com/fonts/kepler-std
 */
-/* line 1, src/lib/modules/_buttons.scss */
+/*
+	Femme.
+		file: css/src/lib/includes/_colors.sass
+*/
+/*
+    Femme.
+        file: css/src/lib/modules/_buttons.scss
+*/
+/* line 6, src/lib/modules/_buttons.scss */
 a.btn {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -88,10 +100,171 @@ a.btn {
   font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 0.225em 0.75em;
 }
-/* line 11, src/lib/modules/_buttons.scss */
+/* line 16, src/lib/modules/_buttons.scss */
 a.btn:hover {
   border-color: #d1d1c3;
-  color: #333333;
+  color: #bbbba6;
+}
+/* line 21, src/lib/modules/_buttons.scss */
+a.btn.small {
+  font-size: 0.625em;
+  line-height: 2.4em;
+  line-height: 1.25em;
+  position: relative;
+  bottom: 0.3em;
+  padding: 0.015em 0.45em;
+}
+/* line 30, src/lib/modules/_buttons.scss */
+a.btn.white {
+  border-color: #d1d1c3;
+  color: #f2f2ee;
+}
+/* line 34, src/lib/modules/_buttons.scss */
+a.btn.white:hover {
+  border-color: #f2f2ee;
+  color: #fefefe;
+}
+
+/*
+  Femme.
+    file: css/src/lib/modules/_post.scss
+*/
+/* line 9, src/lib/modules/_post.scss */
+article.post header h2 a {
+  border: none;
+}
+/* line 14, src/lib/modules/_post.scss */
+article.post header .meta {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  color: #d1d1c3;
+  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* line 20, src/lib/modules/_post.scss */
+article.post header .meta a {
+  color: #d1d1c3;
+}
+/* line 27, src/lib/modules/_post.scss */
+article.post.featured a.btn.small, article.post.non-featured a.btn.small {
+  display: inline;
+}
+/* line 33, src/lib/modules/_post.scss */
+article.post.featured section {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+article.post.featured section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 36, src/lib/modules/_post.scss */
+article.post.featured section header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+/* line 42, src/lib/modules/_post.scss */
+article.post.featured section header h2 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+}
+/* line 45, src/lib/modules/_post.scss */
+article.post.featured section header h2 a {
+  border: none;
+}
+/* line 54, src/lib/modules/_post.scss */
+article.post.non-featured {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+article.post.non-featured:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 57, src/lib/modules/_post.scss */
+article.post.non-featured + article {
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 1.4375em;
+  border-color: #f2f2ee;
+  margin-top: 1.125em;
+}
+/* line 64, src/lib/modules/_post.scss */
+article.post.non-featured figure {
+  width: 31.42857%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 67, src/lib/modules/_post.scss */
+article.post.non-featured figure img {
+  overflow: hidden;
+}
+/* line 72, src/lib/modules/_post.scss */
+article.post.non-featured section {
+  width: 65.71429%;
+  float: right;
+  margin-right: 0;
+  margin-top: 0.375em;
+}
+/* line 78, src/lib/modules/_post.scss */
+article.post.non-featured header {
+  margin-bottom: 0.75em;
+}
+/* line 81, src/lib/modules/_post.scss */
+article.post.non-featured header h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  line-height: 1rem;
+  margin: 0.225em 0 0.225em;
+}
+/* line 87, src/lib/modules/_post.scss */
+article.post.non-featured header h2 a {
+  border: none;
+}
+/* line 96, src/lib/modules/_post.scss */
+article.post.single figure {
+  background: black;
+  text-align: center;
+}
+/* line 100, src/lib/modules/_post.scss */
+article.post.single figure a {
+  display: block;
+}
+/* line 103, src/lib/modules/_post.scss */
+article.post.single figure a img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 110, src/lib/modules/_post.scss */
+article.post.single section {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+article.post.single section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 115, src/lib/modules/_post.scss */
+article.post.single section header {
+  margin-bottom: 1.5em;
+}
+/* line 118, src/lib/modules/_post.scss */
+article.post.single section header h2 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
 }
 
 /*
@@ -417,12 +590,12 @@ html:hover [class^="ss-"] {
 body {
   background: #fefefe;
   color: #333333;
-  font: 18px/1.75em "garamond-premier-pro", Times New Roman, Times, serif;
+  font: 18px/1.75em "adobe-garamond-pro", Times New Roman, Times, serif;
 }
 
 /* line 19, src/application.scss */
 a {
-  border-bottom: 3px solid #e7e7e0;
+  border-bottom: 1px solid #e7e7e0;
   color: #333333;
   text-decoration: none;
 }
@@ -432,38 +605,49 @@ a:hover {
 }
 
 /* line 29, src/application.scss */
+blockquote {
+  border-left: 3px solid #f2f2ee;
+  color: #bbbba6;
+  padding-left: 0.75em;
+}
+
+/* line 35, src/application.scss */
 h1 {
   font-size: 2em;
   line-height: 1.5em;
   font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
   text-transform: lowercase;
 }
-/* line 35, src/application.scss */
+/* line 41, src/application.scss */
 h1 a {
   border: none;
   color: #333333;
 }
-/* line 39, src/application.scss */
+/* line 45, src/application.scss */
 h1 a:hover {
   color: #595959;
 }
-/* line 43, src/application.scss */
+/* line 49, src/application.scss */
 h1 a:after {
   content: ".";
 }
 
-/* line 49, src/application.scss */
+/* line 55, src/application.scss */
 img {
   max-width: 100%;
 }
-/* line 52, src/application.scss */
+/* line 58, src/application.scss */
 img.avatar {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
-/* line 58, src/application.scss */
+/* line 64, src/application.scss */
+figure a {
+  border: none;
+}
+/* line 68, src/application.scss */
 figure figcaption.copyright {
   font-size: 0.625em;
   line-height: 2.4em;
@@ -472,12 +656,33 @@ figure figcaption.copyright {
   line-height: 10px;
 }
 
-/* line 67, src/application.scss */
+/* line 77, src/application.scss */
 p + p {
   text-indent: 2em;
 }
 
-/* line 71, src/application.scss */
+/* line 81, src/application.scss */
+blockquote, ul, ol {
+  margin: 1.5em 0;
+}
+
+/* line 86, src/application.scss */
+ul li, ol li {
+  padding-left: 0.375em;
+  margin-left: 2.25em;
+}
+
+/* line 92, src/application.scss */
+ul li {
+  list-style-type: disc;
+}
+
+/* line 96, src/application.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 100, src/application.scss */
 span.logo {
   font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
   text-transform: lowercase;
@@ -486,7 +691,7 @@ span.logo {
 /*
   II. Header
 */
-/* line 81, src/application.scss */
+/* line 110, src/application.scss */
 header#header {
   max-width: 43.75em;
   margin-left: auto;
@@ -500,13 +705,13 @@ header#header:after {
   display: block;
   clear: both;
 }
-/* line 87, src/application.scss */
+/* line 116, src/application.scss */
 header#header section {
   width: 48.57143%;
   float: left;
   margin-right: 2.85714%;
 }
-/* line 91, src/application.scss */
+/* line 120, src/application.scss */
 header#header nav {
   width: 48.57143%;
   float: right;
@@ -516,27 +721,27 @@ header#header nav {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 100, src/application.scss */
+/* line 128, src/application.scss */
 header#header nav a {
   border: none;
   color: #d1d1c3;
 }
-/* line 104, src/application.scss */
+/* line 132, src/application.scss */
 header#header nav a:hover {
   color: #bbbba6;
 }
-/* line 109, src/application.scss */
+/* line 137, src/application.scss */
 header#header nav ul {
   font-size: 0.75em;
   line-height: 2em;
   float: right;
   margin-top: 1.5em;
 }
-/* line 115, src/application.scss */
+/* line 143, src/application.scss */
 header#header nav ul li {
   display: inline-block;
 }
-/* line 119, src/application.scss */
+/* line 146, src/application.scss */
 header#header nav ul li + li {
   margin-left: 1em;
 }
@@ -544,55 +749,14 @@ header#header nav ul li + li {
 /*
   III. Main
 */
-/* line 135, src/application.scss */
-main .featured article section {
-  max-width: 43.75em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-main .featured article section:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-/* line 138, src/application.scss */
-main .featured article section header {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-}
-/* line 144, src/application.scss */
-main .featured article section header h2 {
-  font-size: 2.25em;
-  line-height: 1.33333em;
-}
-/* line 147, src/application.scss */
-main .featured article section header h2 a {
-  border: none;
-}
-/* line 152, src/application.scss */
-main .featured article section header .meta {
-  font-size: 0.875em;
-  line-height: 1.71429em;
-  color: #d1d1c3;
-  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-/* line 158, src/application.scss */
-main .featured article section header .meta a {
-  color: #d1d1c3;
-}
-/* line 167, src/application.scss */
+/* line 184, src/application.scss */
 main .hero {
   background: #333333;
   color: #fefefe;
   margin: 3em auto;
   text-align: center;
 }
-/* line 173, src/application.scss */
+/* line 190, src/application.scss */
 main .hero .inner {
   max-width: 43.75em;
   margin-left: auto;
@@ -605,77 +769,34 @@ main .hero .inner:after {
   display: block;
   clear: both;
 }
-/* line 179, src/application.scss */
+/* line 196, src/application.scss */
 main .hero section {
   width: 100%;
   float: right;
   margin-right: 0;
 }
-/* line 183, src/application.scss */
+/* line 200, src/application.scss */
 main .hero h2 {
   font-size: 2.25em;
   line-height: 1.33333em;
 }
-/* line 186, src/application.scss */
+/* line 203, src/application.scss */
 main .hero h2 span {
   font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
 }
-/* line 191, src/application.scss */
+/* line 208, src/application.scss */
 main .hero p {
   font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-/* line 196, src/application.scss */
+/* line 212, src/application.scss */
+main .hero nav {
+  margin-top: 0.75em;
+}
+/* line 217, src/application.scss */
 main .non-featured {
-  max-width: 43.75em;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 1px solid #f2f2ee;
-  margin-top: 1.5em;
+  margin-top: 3em;
 }
-/* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-main .non-featured:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-/* line 203, src/application.scss */
-main .non-featured article {
-  width: 48.57143%;
-  float: left;
-  margin-right: 2.85714%;
-}
-/* line 206, src/application.scss */
-main .non-featured article:last-child {
-  float: right;
-  margin-right: 0;
-}
-/* line 210, src/application.scss */
-main .non-featured article header {
-  margin-bottom: 0.75em;
-}
-/* line 213, src/application.scss */
-main .non-featured article header h2 {
-  font-size: 1.5em;
-  line-height: 2em;
-  line-height: 1rem;
-  margin: 0.75em 0 0.225em;
-}
-/* line 219, src/application.scss */
-main .non-featured article header h2 a {
-  border: none;
-}
-/* line 224, src/application.scss */
-main .non-featured article header .meta {
-  font-size: 0.75em;
-  line-height: 2em;
-  color: #d1d1c3;
-  font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-/* line 230, src/application.scss */
-main .non-featured article header .meta a {
-  color: #d1d1c3;
-}
-/* line 238, src/application.scss */
+/* line 262, src/application.scss */
 main footer {
   max-width: 43.75em;
   margin-left: auto;
@@ -688,26 +809,26 @@ main footer:after {
   display: block;
   clear: both;
 }
-/* line 243, src/application.scss */
+/* line 267, src/application.scss */
 main footer nav {
   width: 100%;
   float: right;
   margin-right: 0;
 }
-/* line 246, src/application.scss */
+/* line 270, src/application.scss */
 main footer nav li {
   display: inline-block;
   list-style-type: none;
 }
-/* line 250, src/application.scss */
+/* line 274, src/application.scss */
 main footer nav li.newer {
   float: left;
 }
-/* line 254, src/application.scss */
+/* line 278, src/application.scss */
 main footer nav li.older {
   float: right;
 }
-/* line 261, src/application.scss */
+/* line 285, src/application.scss */
 main .page {
   max-width: 43.75em;
   margin-left: auto;
@@ -720,18 +841,18 @@ main .page:after {
   display: block;
   clear: both;
 }
-/* line 266, src/application.scss */
+/* line 290, src/application.scss */
 main .page header {
   margin-bottom: 1.5em;
 }
-/* line 269, src/application.scss */
+/* line 293, src/application.scss */
 main .page header h2 {
   font-size: 1.5em;
   line-height: 2em;
   font-weight: bold;
 }
 
-/* line 281, src/application.scss */
+/* line 332, src/application.scss */
 footer#footer {
   border-top-width: 0.0625em;
   border-top-style: solid;
@@ -741,11 +862,11 @@ footer#footer {
   margin-top: 6em;
   margin-bottom: 3em;
 }
-/* line 289, src/application.scss */
+/* line 340, src/application.scss */
 footer#footer a {
   border: none;
 }
-/* line 293, src/application.scss */
+/* line 344, src/application.scss */
 footer#footer .inner {
   max-width: 43.75em;
   margin-left: auto;
@@ -757,7 +878,7 @@ footer#footer .inner:after {
   display: block;
   clear: both;
 }
-/* line 297, src/application.scss */
+/* line 348, src/application.scss */
 footer#footer section {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -765,37 +886,40 @@ footer#footer section {
   float: left;
   margin-right: 2.85714%;
 }
-/* line 302, src/application.scss */
+/* line 353, src/application.scss */
 footer#footer nav {
   width: 31.42857%;
   float: right;
   margin-right: 0;
 }
-/* line 306, src/application.scss */
+/* line 357, src/application.scss */
 footer#footer nav a.twitter:hover {
   color: #55acee;
 }
-/* line 310, src/application.scss */
+/* line 361, src/application.scss */
 footer#footer nav a.facebook:hover {
   color: #3b5998;
 }
-/* line 314, src/application.scss */
+/* line 365, src/application.scss */
 footer#footer nav a.instagram:hover {
   color: #4b799f;
 }
-/* line 318, src/application.scss */
+/* line 369, src/application.scss */
 footer#footer nav a.rss:hover {
   color: #ef683e;
 }
-/* line 323, src/application.scss */
+/* line 374, src/application.scss */
 footer#footer nav ul {
   float: right;
+  margin: 0;
 }
-/* line 326, src/application.scss */
+/* line 378, src/application.scss */
 footer#footer nav ul li {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
-/* line 329, src/application.scss */
+/* line 383, src/application.scss */
 footer#footer nav ul li + li {
   margin-left: 1em;
 }

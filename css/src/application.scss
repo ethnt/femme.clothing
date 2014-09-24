@@ -17,13 +17,19 @@ body {
 }
 
 a {
-  border-bottom: 3px solid darken($light-grey, 5%);
+  border-bottom: 1px solid darken($light-grey, 5%);
   color: $text;
   text-decoration: none;
 
   &:hover {
     color: $primary;
   }
+}
+
+blockquote {
+  border-left: 3px solid $light-grey;
+  color: $dark-grey;
+  padding-left: rhythm(0.5);
 }
 
 h1 {
@@ -55,6 +61,10 @@ img {
 }
 
 figure {
+  a {
+    border: none;
+  }
+
   figcaption.copyright {
     @include adjust-font-size-to(10px);
 
@@ -66,6 +76,25 @@ figure {
 
 p + p {
   text-indent: 2em;
+}
+
+blockquote, ul, ol {
+  margin: rhythm(1) 0;
+}
+
+ul, ol {
+  li {
+    padding-left: rhythm(0.25);
+    margin-left: rhythm(1.5);
+  }
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ol li {
+  list-style-type: decimal;
 }
 
 span.logo {
@@ -90,7 +119,6 @@ header#header {
 
   nav {
     @include span(last 6 of 12);
-    // @include omega;
 
     letter-spacing: 0.5px;
     font-family: $sans-serif;
@@ -114,7 +142,6 @@ header#header {
 
       li {
         display: inline-block;
-        // line-height: 5rem;
 
         & + li {
           margin-left: 1em;
@@ -132,35 +159,25 @@ header#header {
 main {
   .featured {
     article {
-      section {
-        @include container;
-
-        header {
-          @include span(12 of 12);
-
-          margin-bottom: rhythm(1);
-          margin-top: rhythm(1);
-
-          h2 {
-            @include adjust-font-size-to(36px);
-
-            a {
-              border: none;
-            }
-          }
-
-          .meta {
-            @include adjust-font-size-to(14px);
-
-            color: $grey;
-            font-family: $sans-serif;
-
-            a {
-              color: $grey;
-            }
-          }
-        }
-      }
+      // section {
+      //   @include container;
+      //
+      //   header {
+      //     @include span(12 of 12);
+      //
+      //     margin-bottom: rhythm(1);
+      //     margin-top: rhythm(1);
+      //
+      //     h2 {
+      //       @include adjust-font-size-to(36px);
+      //
+      //       a {
+      //         border: none;
+      //       }
+      //     }
+      //
+      //   }
+      // }
     }
   }
 
@@ -191,47 +208,54 @@ main {
     p {
       font-family: $sans-serif;
     }
+
+    nav {
+      margin-top: rhythm(0.5);
+    }
   }
 
   .non-featured {
-    @include container;
-    // @include leading-border(1px, 2);
-
-    border-top: 1px solid $light-grey;
-    margin-top: rhythm(1);
+    margin-top: rhythm(2);
 
     article {
-      @include span(6 of 12);
-
-      &:last-child {
-          @include omega;
-      }
-
-      header {
-        margin-bottom: rhythm(0.5);
-
-        h2 {
-          @include adjust-font-size-to(24px);
-
-          line-height: 1rem;
-          margin: rhythm(0.5) 0 rhythm(0.15);
-
-          a {
-            border: none;
-          }
-        }
-
-        .meta {
-          @include adjust-font-size-to(12px);
-
-          color: $grey;
-          font-family: $sans-serif;
-
-          a {
-            color: $grey;
-          }
-        }
-      }
+      // @include container;
+      //
+      // & + article {
+      //   @include leading-border(1px, 1);
+      //
+      //   border-color: $light-grey;
+      //   margin-top: rhythm(0.75);
+      // }
+      //
+      // figure {
+      //   @include span(4 of 12);
+      //
+      //   img {
+      //     overflow: hidden;
+      //   }
+      // }
+      //
+      // section {
+      //   @include span(last 8 of 12);
+      //
+      //   margin-top: rhythm(0.25);
+      // }
+      //
+      // header {
+      //   margin-bottom: rhythm(0.5);
+      //
+      //   h2 {
+      //     @include adjust-font-size-to(24px);
+      //
+      //     line-height: 1rem;
+      //     margin: rhythm(0.15) 0 rhythm(0.15);
+      //
+      //     a {
+      //       border: none;
+      //     }
+      //   }
+      //
+      // }
     }
   }
 
@@ -274,6 +298,33 @@ main {
         font-weight: bold;
       }
     }
+  }
+
+  article.single {
+    // figure {
+    //   background: $text;
+    //   text-align: center;
+    //
+    //   a {
+    //     display: block;
+    //
+    //     img {
+    //       display: block;
+    //     }
+    //   }
+    // }
+    //
+    // section {
+    //   @include container;
+    //
+    //   margin-top: rhythm(2);
+    //
+    //   header {
+    //     h2 {
+    //       @include adjust-font-size-to(36px);
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -322,9 +373,12 @@ footer#footer {
 
     ul {
       float: right;
+      margin: 0;
 
       li {
         display: inline-block;
+        margin: 0;
+        padding: 0;
 
         & + li {
           margin-left: 1em;

@@ -317,6 +317,10 @@ article.post.single section header h2 {
 article.post.single section img {
   margin: 1.5em 0;
 }
+/* line 165, src/lib/modules/_post.scss */
+article.post.single section footer {
+  margin-top: 6em;
+}
 
 /*
 * Symbolset

@@ -1,6 +1,6 @@
 /*
   Femme.
-    file: css/src/application.sass
+    file: css/src/application.scss
 */
 
 @import "lib/base";
@@ -50,6 +50,36 @@ h1 {
       content: ".";
     }
   }
+}
+
+h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-top: 1rem;
+
+    & + * {
+        margin-top: rhythm(0.5, 18px) !important;
+    }
+}
+
+h3 {
+  @include adjust-font-size-to(24px);
+}
+
+h4 {
+  @include adjust-font-size-to(18px);
+}
+
+h5, h6 {
+    color: $dark-grey;
+    text-transform: uppercase;
+}
+
+h5 {
+  @include adjust-font-size-to(14px);
+}
+
+h6 {
+  @include adjust-font-size-to(12px);
 }
 
 img {

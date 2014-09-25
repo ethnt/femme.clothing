@@ -43,22 +43,25 @@
         <nav>
           <ul>
             {% if site.meta['twitter'] %}
-              <li><a class="twitter" href="{{ site.meta['twitter'] }}"><i class="ss-icon">twitter</i></a></li>
+              <li><a class="twitter" href="{{ site.meta['twitter'] }}"><i class="ss-icon ss-social-regular">twitter</i></a></li>
             {% endif %}
             {% if site.meta['facebook'] %}
-              <li><a class="facebook" href="{{ site.meta['facebook'] }}"><i class="ss-icon">facebook</i></a></li>
+              <li><a class="facebook" href="{{ site.meta['facebook'] }}"><i class="ss-icon ss-social-regular">facebook</i></a></li>
             {% endif %}
             {% if site.meta['instagram'] %}
-              <li><a class="instagram" href="{{ site.meta['instagram'] }}"><i class="ss-icon">instagram</i></a></li>
+              <li><a class="instagram" href="{{ site.meta['instagram'] }}"><i class="ss-icon ss-social-regular">instagram</i></a></li>
             {% endif %}
-            <li><a class="rss" href="{{ site.feed_url }}"><i class="ss-icon">rss</i></a></li>
+            <li><a class="rss" href="{{ site.feed_url }}"><i class="ss-icon ss-social-regular">rss</i></a></li>
           </ul>
         </nav>
       </div>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/jsc/lib/vendor/jquery.slides.min.js"></script>
+    <script src="/jsc/lib/vendor/jquery.lazyload.min.js"></script>
     <script src="/webfonts/ss-social-regular/ss-social.js"></script>
+    <script src="/webfonts/ss-standard/ss-standard.js"></script>
     <script src="/jsc/application.js"></script>
   </body>
 </html>

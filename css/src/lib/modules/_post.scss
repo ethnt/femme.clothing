@@ -93,16 +93,54 @@ article.post {
   }
 
   &.single {
-    figure {
+    .slides {
       background: black;
-      text-align: center;
+      position: relative;
 
-      a {
+      &:hover {
+        a {
+          opacity: 1;
+        }
+      }
+
+      img {
         display: block;
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
+      }
 
-        img {
-          display: block;
-          margin: 0 auto;
+      nav {
+        @include transform(translateY(-50%));
+
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+
+        a {
+          @include adjust-font-size-to(16px);
+          @include transition-property(opacity);
+          @include transition-duration(0.2s);
+          @include transition-timing-function(ease-in);
+
+          border: none;
+          color: $base;
+          display: inline-block;
+          padding: rhythm(1);
+          opacity: 0;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.previous {
+            float: left;
+          }
+
+          &.next {
+            float: right;
+          }
         }
       }
     }
@@ -118,6 +156,10 @@ article.post {
         h2 {
           @include adjust-font-size-to(36px);
         }
+      }
+
+      img {
+          margin: rhythm(1) 0;
       }
     }
   }

@@ -5,18 +5,23 @@
 {% endcapture %}
 
 <article class="post single">
-  {% for asset in current.assets limit:1 %}
-    <figure>
-      <a href="{{ current.url }}">
-        <img src="{{ asset.url }}" />
-      </a>
-    </figure>
-  {% endfor %}
+  <div class="slides">
+    {% for asset in current.assets %}
+      <!-- <img class="lazy" src="/img/loading.png" data-src="{{ asset.url }}" /> -->
+      <img src="{{ asset.url }}" />
+    {% endfor %}
+    {% if current.assets.size > 1 %}
+        <nav>
+          <a class="previous"><i class="ss-icon">previous</i></a>
+          <a class="next"><i class="ss-icon">next</i></a>
+        </nav>
+    {% endif %}
+  </div>
   <section>
     <header>
       <h2><a href="{{ current.url }}">{{ current.title }}</a></h2>
       <div class="meta">
-        <p><span class="author">{{ current.author.fullname }}</span> on <span class="timestamp">{{ current.date | date: "%A, %B %-d, %Y" }}</span> in {{ tags }}</p>
+        <p><span class="author">{{ current.author.fullname }}</span> on <span class="timestamp">{{ current.date | date: "%A, %B %-d, %Y" }}</span>{% if current.taxonomy.tags.size > 0 %} in {{ tags }}{% endif %}</p>
       </div>
     </header>
     {{ current.body }}

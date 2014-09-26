@@ -16,11 +16,11 @@
     <header>
       <h2><a href="{{ current.url }}">{{ current.title }}</a></h2>
       <div class="meta">
-        <p><span class="author">{{ current.author.fullname }}</span> on <span class="timestamp">{{ current.date | date: "%A, %B %-d, %Y" }}</span> in {{ tags }}</p>
+        <p><span class="author">{{ current.author.fullname }}</span> on <span class="timestamp">{{ current.date | date: "%A, %B %-d, %Y" }}</span>{% if current.taxonomy.tags.size > 0 %} in {{ tags }}{% endif %}</p>
       </div>
     </header>
     {% if type == 'featured' %}
-      {{ current.body | truncatewords: 90 }} <a class="btn small" href="{{ current.url }}">Read &raquo;</a>
+      {{ current.body | truncatewords: 90 }} <a class="btn" href="{{ current.url }}" style="display: inline">Read &raquo;</a>
     {% else %}
       {{ current.body | truncatewords: 18 }} <a class="btn small" href="{{ current.url }}">Read &raquo;</a>
     {% endif %}

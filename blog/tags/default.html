@@ -1,0 +1,13 @@
+{% capture content %}
+  <div class="page tag">
+    <header>
+      <h3>Posts in {{ title | capitalize }}</h3>
+    </header>
+    {% for current in posts %}
+      {% assign type = "non-featured" %}
+      {% include 'includes/post-excerpt' %}
+    {% endfor %}
+  </div>
+{% endcapture %}
+
+{% include 'layouts/default' %}

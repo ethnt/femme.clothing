@@ -12,6 +12,7 @@ gem 'racksh'
 
 gem 'guard-compass'
 gem 'guard-coffeescript'
+gem 'guard-jammit'
 
 gem 'susy'
 

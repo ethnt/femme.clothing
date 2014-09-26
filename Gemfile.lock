@@ -21,6 +21,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    cssmin (1.0.3)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
@@ -42,6 +43,9 @@ GEM
     guard-compass (1.1.0)
       compass (>= 0.10.5)
       guard (~> 2.0)
+    guard-jammit (1.0.1)
+      guard (>= 1.1.0)
+      jammit
     hitimes (1.2.2)
     httmultiparty (0.3.12)
       httparty (>= 0.7.3)
@@ -50,6 +54,10 @@ GEM
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
+    jammit (0.6.6)
+      cssmin (>= 1.0.3)
+      jsmin (>= 1.0.1)
+    jsmin (1.0.1)
     listen (2.7.9)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -94,6 +102,7 @@ DEPENDENCIES
   foreman
   guard-coffeescript
   guard-compass
+  guard-jammit
   rack
   racksh
   rake

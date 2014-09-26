@@ -1,17 +1,10 @@
-// Femme.
-//   file: css/src/lib/includes/_grid.sass
+/*
+  Femme.
+    file: css/src/lib/includes/_grid.scss
+*/
 
 @import "compass/layout";
 @import "susy";
-
-// $susy: (
-//   container: 960px,
-//   columns: 12,
-//   gutters: 1/4,
-//   math: fluid,
-//   output: float,
-//   gutter-position: inside
-// );
 
 $total-columns: 12;
 $column-width: 2.5em;

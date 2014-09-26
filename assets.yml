@@ -1,0 +1,10 @@
+javascripts:
+  application:
+    - jsc/lib/vendor/jquery.min.js
+    - webfonts/ss-social-regular/ss-social.js
+    - webfonts/ss-standard/ss-standard.js
+    - jsc/application.js
+
+stylesheets:
+  application:
+    - css/application.css

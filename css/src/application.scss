@@ -142,6 +142,7 @@ header#header {
 
   margin-bottom: rhythm(0.5);
   margin-top: rhythm(2);
+  padding: 0 rhythm(1);
 
   section {
     @include span(6 of 12);
@@ -187,30 +188,6 @@ header#header {
 */
 
 main {
-  .featured {
-    article {
-      // section {
-      //   @include container;
-      //
-      //   header {
-      //     @include span(12 of 12);
-      //
-      //     margin-bottom: rhythm(1);
-      //     margin-top: rhythm(1);
-      //
-      //     h2 {
-      //       @include adjust-font-size-to(36px);
-      //
-      //       a {
-      //         border: none;
-      //       }
-      //     }
-      //
-      //   }
-      // }
-    }
-  }
-
   .hero {
     background: $text;
     color: $base;
@@ -221,6 +198,10 @@ main {
       @include container;
       // margin: rhythm(2) auto;
       padding: rhythm(5);
+
+      @media (max-width: $tablet-large) {
+        padding: rhythm(1) !important;
+      }
     }
 
     section {
@@ -246,47 +227,6 @@ main {
 
   .non-featured {
     margin-top: rhythm(2);
-
-    article {
-      // @include container;
-      //
-      // & + article {
-      //   @include leading-border(1px, 1);
-      //
-      //   border-color: $light-grey;
-      //   margin-top: rhythm(0.75);
-      // }
-      //
-      // figure {
-      //   @include span(4 of 12);
-      //
-      //   img {
-      //     overflow: hidden;
-      //   }
-      // }
-      //
-      // section {
-      //   @include span(last 8 of 12);
-      //
-      //   margin-top: rhythm(0.25);
-      // }
-      //
-      // header {
-      //   margin-bottom: rhythm(0.5);
-      //
-      //   h2 {
-      //     @include adjust-font-size-to(24px);
-      //
-      //     line-height: 1rem;
-      //     margin: rhythm(0.15) 0 rhythm(0.15);
-      //
-      //     a {
-      //       border: none;
-      //     }
-      //   }
-      //
-      // }
-    }
   }
 
   footer {
@@ -316,6 +256,7 @@ main {
     @include container;
 
     margin-top: rhythm(2);
+    padding: 0 rhythm(1.5);
 
     header {
       margin-bottom: rhythm(1);
@@ -323,38 +264,9 @@ main {
       h2 {
         @include adjust-font-size-to(24px);
 
-        // font-family: $sans-serif;
-        // text-transform: uppercase;
         font-weight: bold;
       }
     }
-  }
-
-  article.single {
-    // figure {
-    //   background: $text;
-    //   text-align: center;
-    //
-    //   a {
-    //     display: block;
-    //
-    //     img {
-    //       display: block;
-    //     }
-    //   }
-    // }
-    //
-    // section {
-    //   @include container;
-    //
-    //   margin-top: rhythm(2);
-    //
-    //   header {
-    //     h2 {
-    //       @include adjust-font-size-to(36px);
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -366,13 +278,37 @@ footer#footer {
   color: $grey;
   margin-top: rhythm(4);
   margin-bottom: rhythm(2);
+  padding-left: rhythm(1.5);
+  padding-right: rhythm(1.5);
 
   a {
     border: none;
   }
 
   .inner {
-    @include container;
+    @media (min-width: $tablet-large) {
+      @include container;
+
+      section {
+        @include span(8 of 12);
+      }
+
+      nav {
+        @include span(last 4 of 12);
+      }
+    }
+
+    @media (max-width: $tablet-large) {
+      section, nav {
+        @include container;
+      }
+
+      nav {
+        ul {
+          float: left;
+        }
+      }
+    }
   }
 
   section {

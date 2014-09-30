@@ -33,6 +33,8 @@ article.post {
     section {
       @include container;
 
+      padding: 0 1.5em;
+
       header {
         @include span(12 of 12);
 
@@ -56,7 +58,33 @@ article.post {
   }
 
   &.non-featured {
-    @include container;
+    // @include container;
+
+    padding: 0 rhythm(1.5);
+
+    @media (min-width: $tablet-large) {
+      @include container;
+
+      figure {
+        @include span(4 of 12);
+      }
+
+      section {
+        @include span(last 8 of 12);
+      }
+    }
+
+    @media (max-width: $tablet-large) {
+      figure {
+        @include container;
+        // @include span(last 12 of 12);
+      }
+
+      section {
+        @include container;
+        // @include span(last 12 of 12);
+      }
+    }
 
     & + article {
       @include leading-border(1px, 1);
@@ -66,7 +94,7 @@ article.post {
     }
 
     figure {
-      @include span(4 of 12);
+      // @include span(4 of 12);
 
       img {
         overflow: hidden;
@@ -74,7 +102,7 @@ article.post {
     }
 
     section {
-      @include span(last 8 of 12);
+      // @include span(last 8 of 12);
 
       margin-top: rhythm(0.25);
     }
@@ -85,7 +113,7 @@ article.post {
       h2 {
         @include adjust-font-size-to(24px);
 
-        line-height: 1rem;
+        line-height: 28px;
         margin: rhythm(0.15) 0 rhythm(0.15);
 
         a {

@@ -156,7 +156,19 @@ article.post header .meta a {
 article.post.featured a.btn.small, article.post.non-featured a.btn.small {
   display: inline;
 }
-/* line 33, src/lib/modules/_post.scss */
+/* line 34, src/lib/modules/_post.scss */
+article.post.featured figure a {
+  background: black;
+  display: block;
+  overflow: hidden;
+}
+/* line 40, src/lib/modules/_post.scss */
+article.post.featured figure img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 47, src/lib/modules/_post.scss */
 article.post.featured section {
   max-width: 43.75em;
   margin-left: auto;
@@ -169,7 +181,7 @@ article.post.featured section:after {
   display: block;
   clear: both;
 }
-/* line 38, src/lib/modules/_post.scss */
+/* line 52, src/lib/modules/_post.scss */
 article.post.featured section header {
   width: 100%;
   float: left;
@@ -178,21 +190,21 @@ article.post.featured section header {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
-/* line 44, src/lib/modules/_post.scss */
+/* line 58, src/lib/modules/_post.scss */
 article.post.featured section header h2 {
   font-size: 2.25em;
   line-height: 1.33333em;
 }
-/* line 47, src/lib/modules/_post.scss */
+/* line 61, src/lib/modules/_post.scss */
 article.post.featured section header h2 a {
   border: none;
 }
-/* line 60, src/lib/modules/_post.scss */
+/* line 74, src/lib/modules/_post.scss */
 article.post.non-featured {
   padding: 0 2.25em;
 }
 @media (min-width: 768px) {
-  /* line 60, src/lib/modules/_post.scss */
+  /* line 74, src/lib/modules/_post.scss */
   article.post.non-featured {
     max-width: 43.75em;
     margin-left: auto;
@@ -204,13 +216,13 @@ article.post.non-featured {
     display: block;
     clear: both;
   }
-  /* line 68, src/lib/modules/_post.scss */
+  /* line 82, src/lib/modules/_post.scss */
   article.post.non-featured figure {
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 72, src/lib/modules/_post.scss */
+  /* line 86, src/lib/modules/_post.scss */
   article.post.non-featured section {
     width: 65.71429%;
     float: right;
@@ -218,7 +230,7 @@ article.post.non-featured {
   }
 }
 @media (max-width: 768px) {
-  /* line 78, src/lib/modules/_post.scss */
+  /* line 92, src/lib/modules/_post.scss */
   article.post.non-featured figure {
     max-width: 43.75em;
     margin-left: auto;
@@ -230,7 +242,7 @@ article.post.non-featured {
     display: block;
     clear: both;
   }
-  /* line 83, src/lib/modules/_post.scss */
+  /* line 97, src/lib/modules/_post.scss */
   article.post.non-featured section {
     max-width: 43.75em;
     margin-left: auto;
@@ -243,7 +255,7 @@ article.post.non-featured {
     clear: both;
   }
 }
-/* line 89, src/lib/modules/_post.scss */
+/* line 103, src/lib/modules/_post.scss */
 article.post.non-featured + article {
   border-top-width: 0.0625em;
   border-top-style: solid;
@@ -251,50 +263,50 @@ article.post.non-featured + article {
   border-color: #f2f2ee;
   margin-top: 1.125em;
 }
-/* line 99, src/lib/modules/_post.scss */
+/* line 113, src/lib/modules/_post.scss */
 article.post.non-featured figure img {
   overflow: hidden;
 }
-/* line 104, src/lib/modules/_post.scss */
+/* line 118, src/lib/modules/_post.scss */
 article.post.non-featured section {
   margin-top: 0.375em;
 }
-/* line 110, src/lib/modules/_post.scss */
+/* line 124, src/lib/modules/_post.scss */
 article.post.non-featured header {
   margin-bottom: 0.75em;
 }
-/* line 113, src/lib/modules/_post.scss */
+/* line 127, src/lib/modules/_post.scss */
 article.post.non-featured header h2 {
   font-size: 1.5em;
   line-height: 2em;
   line-height: 28px;
   margin: 0.225em 0 0.225em;
 }
-/* line 119, src/lib/modules/_post.scss */
+/* line 133, src/lib/modules/_post.scss */
 article.post.non-featured header h2 a {
   border: none;
 }
-/* line 127, src/lib/modules/_post.scss */
+/* line 141, src/lib/modules/_post.scss */
 article.post.single {
   padding-top: 0;
 }
-/* line 130, src/lib/modules/_post.scss */
+/* line 144, src/lib/modules/_post.scss */
 article.post.single .slides {
   background: black;
   position: relative;
 }
-/* line 135, src/lib/modules/_post.scss */
+/* line 149, src/lib/modules/_post.scss */
 article.post.single .slides:hover a {
   opacity: 1;
 }
-/* line 140, src/lib/modules/_post.scss */
+/* line 154, src/lib/modules/_post.scss */
 article.post.single .slides img {
   display: block;
   max-width: 100%;
   width: auto;
   margin: 0 auto;
 }
-/* line 147, src/lib/modules/_post.scss */
+/* line 161, src/lib/modules/_post.scss */
 article.post.single .slides nav {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -305,7 +317,7 @@ article.post.single .slides nav {
   position: absolute;
   top: 50%;
 }
-/* line 155, src/lib/modules/_post.scss */
+/* line 169, src/lib/modules/_post.scss */
 article.post.single .slides nav a {
   font-size: 1em;
   line-height: 1.5em;
@@ -327,19 +339,19 @@ article.post.single .slides nav a {
   padding: 1.5em;
   opacity: 0;
 }
-/* line 167, src/lib/modules/_post.scss */
+/* line 181, src/lib/modules/_post.scss */
 article.post.single .slides nav a:hover {
   cursor: pointer;
 }
-/* line 171, src/lib/modules/_post.scss */
+/* line 185, src/lib/modules/_post.scss */
 article.post.single .slides nav a.previous {
   float: left;
 }
-/* line 175, src/lib/modules/_post.scss */
+/* line 189, src/lib/modules/_post.scss */
 article.post.single .slides nav a.next {
   float: right;
 }
-/* line 182, src/lib/modules/_post.scss */
+/* line 196, src/lib/modules/_post.scss */
 article.post.single section {
   max-width: 43.75em;
   margin-left: auto;
@@ -352,20 +364,20 @@ article.post.single section:after {
   display: block;
   clear: both;
 }
-/* line 187, src/lib/modules/_post.scss */
+/* line 201, src/lib/modules/_post.scss */
 article.post.single section header {
   margin-bottom: 1.5em;
 }
-/* line 190, src/lib/modules/_post.scss */
+/* line 204, src/lib/modules/_post.scss */
 article.post.single section header h2 {
   font-size: 2.25em;
   line-height: 1.33333em;
 }
-/* line 195, src/lib/modules/_post.scss */
+/* line 209, src/lib/modules/_post.scss */
 article.post.single section img {
   margin: 1.5em 0;
 }
-/* line 199, src/lib/modules/_post.scss */
+/* line 213, src/lib/modules/_post.scss */
 article.post.single section footer {
   margin-top: 6em;
 }

@@ -30,6 +30,20 @@ article.post {
   }
 
   &.featured {
+    figure {
+      a {
+        background: black;
+        display: block;
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
     section {
       @include container;
 

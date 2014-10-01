@@ -286,27 +286,23 @@ article.post.non-featured header h2 {
 article.post.non-featured header h2 a {
   border: none;
 }
-/* line 141, src/lib/modules/_post.scss */
-article.post.single {
-  padding-top: 0;
-}
-/* line 144, src/lib/modules/_post.scss */
+/* line 142, src/lib/modules/_post.scss */
 article.post.single .slides {
   background: black;
   position: relative;
 }
-/* line 149, src/lib/modules/_post.scss */
+/* line 147, src/lib/modules/_post.scss */
 article.post.single .slides:hover a {
   opacity: 1;
 }
-/* line 154, src/lib/modules/_post.scss */
+/* line 152, src/lib/modules/_post.scss */
 article.post.single .slides img {
   display: block;
   max-width: 100%;
   width: auto;
   margin: 0 auto;
 }
-/* line 161, src/lib/modules/_post.scss */
+/* line 159, src/lib/modules/_post.scss */
 article.post.single .slides nav {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -317,7 +313,7 @@ article.post.single .slides nav {
   position: absolute;
   top: 50%;
 }
-/* line 169, src/lib/modules/_post.scss */
+/* line 167, src/lib/modules/_post.scss */
 article.post.single .slides nav a {
   font-size: 1em;
   line-height: 1.5em;
@@ -339,19 +335,19 @@ article.post.single .slides nav a {
   padding: 1.5em;
   opacity: 0;
 }
-/* line 181, src/lib/modules/_post.scss */
+/* line 179, src/lib/modules/_post.scss */
 article.post.single .slides nav a:hover {
   cursor: pointer;
 }
-/* line 185, src/lib/modules/_post.scss */
+/* line 183, src/lib/modules/_post.scss */
 article.post.single .slides nav a.previous {
   float: left;
 }
-/* line 189, src/lib/modules/_post.scss */
+/* line 187, src/lib/modules/_post.scss */
 article.post.single .slides nav a.next {
   float: right;
 }
-/* line 196, src/lib/modules/_post.scss */
+/* line 194, src/lib/modules/_post.scss */
 article.post.single section {
   max-width: 43.75em;
   margin-left: auto;
@@ -364,20 +360,26 @@ article.post.single section:after {
   display: block;
   clear: both;
 }
-/* line 201, src/lib/modules/_post.scss */
+@media (max-width: 480px) {
+  /* line 194, src/lib/modules/_post.scss */
+  article.post.single section {
+    padding: 0 2.25em;
+  }
+}
+/* line 203, src/lib/modules/_post.scss */
 article.post.single section header {
   margin-bottom: 1.5em;
 }
-/* line 204, src/lib/modules/_post.scss */
+/* line 206, src/lib/modules/_post.scss */
 article.post.single section header h2 {
   font-size: 2.25em;
   line-height: 1.33333em;
 }
-/* line 209, src/lib/modules/_post.scss */
+/* line 211, src/lib/modules/_post.scss */
 article.post.single section img {
   margin: 1.5em 0;
 }
-/* line 213, src/lib/modules/_post.scss */
+/* line 215, src/lib/modules/_post.scss */
 article.post.single section footer {
   margin-top: 6em;
 }

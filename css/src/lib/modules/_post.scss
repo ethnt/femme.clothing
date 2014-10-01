@@ -139,8 +139,6 @@ article.post {
   }
 
   &.single {
-    padding-top: 0;
-
     .slides {
       background: black;
       position: relative;
@@ -197,6 +195,10 @@ article.post {
       @include container;
 
       margin-top: rhythm(1.5);
+
+      @media (max-width: $tablet-small) {
+        padding: 0 rhythm(1.5);
+      }
 
       header {
         margin-bottom: rhythm(1);

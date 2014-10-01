@@ -45,7 +45,7 @@ $(document).ready ->
   $(".next").on "click", ->
     slideshow.next()
 
-  $("h2").each ->
-    text = $(@).text()
-    text = text.replace("femme", '<span class="logo">femme</span>')
-    $(@).html(text)
+  # $("h2").each ->
+  #   text = $(@).text()
+  #   text = text.replace("femme", '<span class="logo">femme</span>')
+  #   $(@).html(text)

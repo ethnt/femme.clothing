@@ -46,8 +46,14 @@
     $(".previous").on("click", function() {
       return slideshow.previous();
     });
-    return $(".next").on("click", function() {
+    $(".next").on("click", function() {
       return slideshow.next();
+    });
+    return $("h2").each(function() {
+      var text;
+      text = $(this).text();
+      text = text.replace("femme", '<span class="logo">femme</span>');
+      return $(this).html(text);
     });
   });
 

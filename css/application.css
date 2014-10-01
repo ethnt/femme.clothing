@@ -360,7 +360,7 @@ article.post.single section:after {
   display: block;
   clear: both;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   /* line 194, src/lib/modules/_post.scss */
   article.post.single section {
     padding: 0 2.25em;

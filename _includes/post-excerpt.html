@@ -20,7 +20,7 @@
       </div>
     </header>
     {% if type == 'featured' %}
-      {{ current.body | truncatewords: 90 }} <a class="btn" href="{{ current.url }}" style="display: inline">Read &raquo;</a>
+      {{ current.body }}
     {% else %}
       {{ current.body | truncatewords: 18 }} <a class="btn small" href="{{ current.url }}">Read &raquo;</a>
     {% endif %}

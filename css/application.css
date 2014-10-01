@@ -187,10 +187,6 @@ article.post.featured section header h2 {
 article.post.featured section header h2 a {
   border: none;
 }
-/* line 55, src/lib/modules/_post.scss */
-article.post.featured p {
-  display: inline-block;
-}
 /* line 60, src/lib/modules/_post.scss */
 article.post.non-featured {
   padding: 0 2.25em;

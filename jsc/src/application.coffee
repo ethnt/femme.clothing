@@ -6,6 +6,9 @@ class Slideshow
     @index = 0
     @images = $(@container).children("img")
 
+    for image in @images
+      $(image).attr('src', $(image).attr('data-src'))
+
     @.refresh()
 
 
@@ -13,8 +16,13 @@ class Slideshow
     # Hide all of the images to start.
     @images.hide()
 
+    # @images.attr('src', '/img/loading.png')
+
     # Show the image at the current index.
     current = $(@images[@index])
+
+    # current.attr('src', current.attr('data-src'))
+
     current.show()
 
 
@@ -36,6 +44,10 @@ class Slideshow
     @.refresh()
 
 
+  preload: =>
+
+
+
 $(document).ready ->
   slideshow = new Slideshow(".slides")
 
@@ -44,6 +56,7 @@ $(document).ready ->
 
   $(".next").on "click", ->
     slideshow.next()
+
 
   # $("h2").each ->
   #   text = $(@).text()

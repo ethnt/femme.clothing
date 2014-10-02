@@ -1,5 +1,5 @@
 (function() {
-  var Slideshow,
+  var Slideshow, slideshow,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   Slideshow = (function() {
@@ -49,15 +49,26 @@
 
   })();
 
+  slideshow = new Slideshow(".slides");
+
   $(document).ready(function() {
-    var slideshow;
-    slideshow = new Slideshow(".slides");
     $(".previous").on("click", function() {
       return slideshow.previous();
     });
     return $(".next").on("click", function() {
       return slideshow.next();
     });
+  });
+
+  $(document).keydown(function(e) {
+    switch (e.which) {
+      case 39:
+        slideshow.next();
+        break;
+      case 37:
+        slideshow.previous();
+    }
+    return e.preventDefault();
   });
 
 }).call(this);

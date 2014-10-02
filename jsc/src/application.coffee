@@ -16,12 +16,8 @@ class Slideshow
     # Hide all of the images to start.
     @images.hide()
 
-    # @images.attr('src', '/img/loading.png')
-
     # Show the image at the current index.
     current = $(@images[@index])
-
-    # current.attr('src', current.attr('data-src'))
 
     current.show()
 
@@ -48,8 +44,9 @@ class Slideshow
 
 
 
+slideshow = new Slideshow(".slides")
+
 $(document).ready ->
-  slideshow = new Slideshow(".slides")
 
   $(".previous").on "click", ->
     slideshow.previous()
@@ -57,8 +54,15 @@ $(document).ready ->
   $(".next").on "click", ->
     slideshow.next()
 
+$(document).keydown (e) ->
+  switch e.which
 
-  # $("h2").each ->
-  #   text = $(@).text()
-  #   text = text.replace("femme", '<span class="logo">femme</span>')
-  #   $(@).html(text)
+    # Right key trigger
+    when 39
+      slideshow.next()
+
+    # Left key trigger
+    when 37
+      slideshow.previous();
+
+  e.preventDefault()

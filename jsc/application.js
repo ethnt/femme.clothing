@@ -6,7 +6,6 @@
     function Slideshow(container) {
       var image, _i, _len, _ref;
       this.container = container;
-      this.preload = __bind(this.preload, this);
       this.next = __bind(this.next, this);
       this.previous = __bind(this.previous, this);
       this.refresh = __bind(this.refresh, this);
@@ -42,8 +41,6 @@
       }
       return this.refresh();
     };
-
-    Slideshow.prototype.preload = function() {};
 
     return Slideshow;
 

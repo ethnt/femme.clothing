@@ -38,10 +38,7 @@ class Slideshow
       @index = 0
 
     @.refresh()
-
-
-  preload: =>
-
+    
 
 
 slideshow = new Slideshow(".slides")
@@ -53,6 +50,7 @@ $(document).ready ->
 
   $(".next").on "click", ->
     slideshow.next()
+
 
 $(document).keydown (e) ->
   switch e.which

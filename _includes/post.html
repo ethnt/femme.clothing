@@ -8,7 +8,7 @@
   {% if current.assets.size > 0 %}
     <div class="slides">
       {% for asset in current.assets %}
-        <img src="{{ asset.url }}" />
+        <img src="/img/preload.png" data-src="{{ asset.url }}" />
       {% endfor %}
       {% if current.assets.size > 1 %}
           <nav>

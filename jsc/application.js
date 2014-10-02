@@ -4,12 +4,19 @@
 
   Slideshow = (function() {
     function Slideshow(container) {
+      var image, _i, _len, _ref;
       this.container = container;
+      this.preload = __bind(this.preload, this);
       this.next = __bind(this.next, this);
       this.previous = __bind(this.previous, this);
       this.refresh = __bind(this.refresh, this);
       this.index = 0;
       this.images = $(this.container).children("img");
+      _ref = this.images;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        image = _ref[_i];
+        $(image).attr('src', $(image).attr('data-src'));
+      }
       this.refresh();
     }
 
@@ -35,6 +42,8 @@
       }
       return this.refresh();
     };
+
+    Slideshow.prototype.preload = function() {};
 
     return Slideshow;
 

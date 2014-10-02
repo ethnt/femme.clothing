@@ -7,7 +7,11 @@
 
     <meta name="description" content="{{ site.meta.description }}">
 
-    <title>{{ site.title }}</title>
+    {% if current.title %}
+      <title>{{ current.title }} - {{ site.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
 
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png">

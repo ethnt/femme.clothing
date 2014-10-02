@@ -38,7 +38,7 @@ class Slideshow
       @index = 0
 
     @.refresh()
-    
+
 
 
 slideshow = new Slideshow(".slides")
@@ -63,4 +63,4 @@ $(document).keydown (e) ->
     when 37
       slideshow.previous();
 
-  e.preventDefault()
+  # e.preventDefault()

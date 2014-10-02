@@ -13,5 +13,4 @@ if(re.test(els[i].className))a.push(els[i]);return a;};var ss_liga=function(that
 this.refresh();}
 Slideshow.prototype.refresh=function(){var current;this.images.hide();current=$(this.images[this.index]);return current.show();};Slideshow.prototype.previous=function(){this.index=this.index-1;if(this.index<0){this.index=this.images.size()-1;}
 return this.refresh();};Slideshow.prototype.next=function(){this.index=this.index+1;if(this.index===this.images.size()){this.index=0;}
-return this.refresh();};return Slideshow;})();slideshow=new Slideshow(".slides");$(document).ready(function(){$(".previous").on("click",function(){return slideshow.previous();});return $(".next").on("click",function(){return slideshow.next();});});$(document).keydown(function(e){switch(e.which){case 39:slideshow.next();break;case 37:slideshow.previous();}
-return e.preventDefault();});}).call(this);
+return this.refresh();};return Slideshow;})();slideshow=new Slideshow(".slides");$(document).ready(function(){$(".previous").on("click",function(){return slideshow.previous();});return $(".next").on("click",function(){return slideshow.next();});});$(document).keydown(function(e){switch(e.which){case 39:return slideshow.next();case 37:return slideshow.previous();}});}).call(this);

@@ -60,12 +60,10 @@
   $(document).keydown(function(e) {
     switch (e.which) {
       case 39:
-        slideshow.next();
-        break;
+        return slideshow.next();
       case 37:
-        slideshow.previous();
+        return slideshow.previous();
     }
-    return e.preventDefault();
   });
 
 }).call(this);

@@ -7,7 +7,7 @@
 
     <meta name="description" content="{{ site.meta.description }}">
 
-    {% if current.title %}
+    {% if current.title and current.title != "Blog" %}
       <title>{{ current.title }} - {{ site.title }}</title>
     {% else %}
       <title>{{ site.title }}</title>

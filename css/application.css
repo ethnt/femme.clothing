@@ -1791,31 +1791,32 @@ figure figcaption.copyright {
 
 /* line 107, src/application.scss */
 p + p {
+  margin-top: 0.75em;
   text-indent: 2em;
 }
 
-/* line 111, src/application.scss */
+/* line 112, src/application.scss */
 blockquote, ul, ol {
   margin: 1.5em 0;
 }
 
-/* line 116, src/application.scss */
+/* line 117, src/application.scss */
 ul li, ol li {
   padding-left: 0.375em;
   margin-left: 2.25em;
 }
 
-/* line 122, src/application.scss */
+/* line 123, src/application.scss */
 ul li {
   list-style-type: disc;
 }
 
-/* line 126, src/application.scss */
+/* line 127, src/application.scss */
 ol li {
   list-style-type: decimal;
 }
 
-/* line 130, src/application.scss */
+/* line 131, src/application.scss */
 span.logo {
   font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
   text-transform: lowercase;
@@ -1824,7 +1825,7 @@ span.logo {
 /*
   II. Header
 */
-/* line 140, src/application.scss */
+/* line 141, src/application.scss */
 header#header {
   max-width: 43.75em;
   margin-left: auto;
@@ -1839,13 +1840,13 @@ header#header:after {
   display: block;
   clear: both;
 }
-/* line 147, src/application.scss */
+/* line 148, src/application.scss */
 header#header section {
   width: 48.57143%;
   float: left;
   margin-right: 2.85714%;
 }
-/* line 151, src/application.scss */
+/* line 152, src/application.scss */
 header#header nav {
   width: 48.57143%;
   float: right;
@@ -1855,27 +1856,27 @@ header#header nav {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 159, src/application.scss */
+/* line 160, src/application.scss */
 header#header nav a {
   border: none;
   color: #d1d1c3;
 }
-/* line 163, src/application.scss */
+/* line 164, src/application.scss */
 header#header nav a:hover {
   color: #bbbba6;
 }
-/* line 168, src/application.scss */
+/* line 169, src/application.scss */
 header#header nav ul {
   font-size: 0.75em;
   line-height: 2em;
   float: right;
   margin-top: 1.5em;
 }
-/* line 174, src/application.scss */
+/* line 175, src/application.scss */
 header#header nav ul li {
   display: inline-block;
 }
-/* line 177, src/application.scss */
+/* line 178, src/application.scss */
 header#header nav ul li + li {
   margin-left: 1em;
 }
@@ -1883,14 +1884,14 @@ header#header nav ul li + li {
 /*
   III. Main
 */
-/* line 191, src/application.scss */
+/* line 192, src/application.scss */
 main .hero {
   background: #333333;
   color: #fefefe;
   margin: 3em auto;
   text-align: center;
 }
-/* line 197, src/application.scss */
+/* line 198, src/application.scss */
 main .hero .inner {
   max-width: 43.75em;
   margin-left: auto;
@@ -1904,39 +1905,39 @@ main .hero .inner:after {
   clear: both;
 }
 @media (max-width: 768px) {
-  /* line 197, src/application.scss */
+  /* line 198, src/application.scss */
   main .hero .inner {
     padding: 1.5em !important;
   }
 }
-/* line 207, src/application.scss */
+/* line 208, src/application.scss */
 main .hero section {
   width: 100%;
   float: right;
   margin-right: 0;
 }
-/* line 211, src/application.scss */
+/* line 212, src/application.scss */
 main .hero h2 {
   font-size: 2.25em;
   line-height: 1.33333em;
 }
-/* line 214, src/application.scss */
+/* line 215, src/application.scss */
 main .hero h2 span {
   font-family: "ltc-bodoni-175", Times New Roman, Times, serif;
 }
-/* line 219, src/application.scss */
+/* line 220, src/application.scss */
 main .hero p {
   font-family: "franklin-gothic-urw", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-/* line 223, src/application.scss */
+/* line 224, src/application.scss */
 main .hero nav {
   margin-top: 0.75em;
 }
-/* line 228, src/application.scss */
+/* line 229, src/application.scss */
 main .non-featured {
   margin-top: 3em;
 }
-/* line 232, src/application.scss */
+/* line 233, src/application.scss */
 main footer {
   max-width: 43.75em;
   margin-left: auto;
@@ -1949,26 +1950,26 @@ main footer:after {
   display: block;
   clear: both;
 }
-/* line 237, src/application.scss */
+/* line 238, src/application.scss */
 main footer nav {
   width: 100%;
   float: right;
   margin-right: 0;
 }
-/* line 240, src/application.scss */
+/* line 241, src/application.scss */
 main footer nav li {
   display: inline-block;
   list-style-type: none;
 }
-/* line 244, src/application.scss */
+/* line 245, src/application.scss */
 main footer nav li.newer {
   float: left;
 }
-/* line 248, src/application.scss */
+/* line 249, src/application.scss */
 main footer nav li.older {
   float: right;
 }
-/* line 255, src/application.scss */
+/* line 256, src/application.scss */
 main .page {
   max-width: 43.75em;
   margin-left: auto;
@@ -1982,18 +1983,18 @@ main .page:after {
   display: block;
   clear: both;
 }
-/* line 261, src/application.scss */
+/* line 262, src/application.scss */
 main .page header {
   margin-bottom: 1.5em;
 }
-/* line 264, src/application.scss */
+/* line 265, src/application.scss */
 main .page header h2 {
   font-size: 1.5em;
   line-height: 2em;
   font-weight: bold;
 }
 
-/* line 274, src/application.scss */
+/* line 275, src/application.scss */
 footer#footer {
   border-top-width: 0.0625em;
   border-top-style: solid;
@@ -2005,12 +2006,12 @@ footer#footer {
   padding-left: 2.25em;
   padding-right: 2.25em;
 }
-/* line 284, src/application.scss */
+/* line 285, src/application.scss */
 footer#footer a {
   border: none;
 }
 @media (min-width: 768px) {
-  /* line 288, src/application.scss */
+  /* line 289, src/application.scss */
   footer#footer .inner {
     max-width: 43.75em;
     margin-left: auto;
@@ -2022,13 +2023,13 @@ footer#footer a {
     display: block;
     clear: both;
   }
-  /* line 292, src/application.scss */
+  /* line 293, src/application.scss */
   footer#footer .inner section {
     width: 65.71429%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 296, src/application.scss */
+  /* line 297, src/application.scss */
   footer#footer .inner nav {
     width: 31.42857%;
     float: right;
@@ -2036,7 +2037,7 @@ footer#footer a {
   }
 }
 @media (max-width: 768px) {
-  /* line 302, src/application.scss */
+  /* line 303, src/application.scss */
   footer#footer .inner section, footer#footer .inner nav {
     max-width: 43.75em;
     margin-left: auto;
@@ -2048,12 +2049,12 @@ footer#footer a {
     display: block;
     clear: both;
   }
-  /* line 307, src/application.scss */
+  /* line 308, src/application.scss */
   footer#footer .inner nav ul {
     float: left;
   }
 }
-/* line 314, src/application.scss */
+/* line 315, src/application.scss */
 footer#footer section {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -2061,40 +2062,40 @@ footer#footer section {
   float: left;
   margin-right: 2.85714%;
 }
-/* line 319, src/application.scss */
+/* line 320, src/application.scss */
 footer#footer nav {
   width: 31.42857%;
   float: right;
   margin-right: 0;
 }
-/* line 323, src/application.scss */
+/* line 324, src/application.scss */
 footer#footer nav a.twitter:hover {
   color: #55acee;
 }
-/* line 327, src/application.scss */
+/* line 328, src/application.scss */
 footer#footer nav a.facebook:hover {
   color: #3b5998;
 }
-/* line 331, src/application.scss */
+/* line 332, src/application.scss */
 footer#footer nav a.instagram:hover {
   color: #4b799f;
 }
-/* line 335, src/application.scss */
+/* line 336, src/application.scss */
 footer#footer nav a.rss:hover {
   color: #ef683e;
 }
-/* line 340, src/application.scss */
+/* line 341, src/application.scss */
 footer#footer nav ul {
   float: right;
   margin: 0;
 }
-/* line 344, src/application.scss */
+/* line 345, src/application.scss */
 footer#footer nav ul li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 349, src/application.scss */
+/* line 350, src/application.scss */
 footer#footer nav ul li + li {
   margin-left: 1em;
 }

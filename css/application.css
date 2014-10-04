@@ -2016,6 +2016,7 @@ footer#footer a {
     max-width: 43.75em;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 3em;
   }
   /* line 12, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   footer#footer .inner:after {
@@ -2023,13 +2024,13 @@ footer#footer a {
     display: block;
     clear: both;
   }
-  /* line 293, src/application.scss */
+  /* line 295, src/application.scss */
   footer#footer .inner section {
     width: 65.71429%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 297, src/application.scss */
+  /* line 299, src/application.scss */
   footer#footer .inner nav {
     width: 31.42857%;
     float: right;
@@ -2037,7 +2038,7 @@ footer#footer a {
   }
 }
 @media (max-width: 768px) {
-  /* line 303, src/application.scss */
+  /* line 305, src/application.scss */
   footer#footer .inner section, footer#footer .inner nav {
     max-width: 43.75em;
     margin-left: auto;
@@ -2049,12 +2050,12 @@ footer#footer a {
     display: block;
     clear: both;
   }
-  /* line 308, src/application.scss */
+  /* line 310, src/application.scss */
   footer#footer .inner nav ul {
     float: left;
   }
 }
-/* line 315, src/application.scss */
+/* line 317, src/application.scss */
 footer#footer section {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -2062,40 +2063,40 @@ footer#footer section {
   float: left;
   margin-right: 2.85714%;
 }
-/* line 320, src/application.scss */
+/* line 322, src/application.scss */
 footer#footer nav {
   width: 31.42857%;
   float: right;
   margin-right: 0;
 }
-/* line 324, src/application.scss */
+/* line 326, src/application.scss */
 footer#footer nav a.twitter:hover {
   color: #55acee;
 }
-/* line 328, src/application.scss */
+/* line 330, src/application.scss */
 footer#footer nav a.facebook:hover {
   color: #3b5998;
 }
-/* line 332, src/application.scss */
+/* line 334, src/application.scss */
 footer#footer nav a.instagram:hover {
   color: #4b799f;
 }
-/* line 336, src/application.scss */
+/* line 338, src/application.scss */
 footer#footer nav a.rss:hover {
   color: #ef683e;
 }
-/* line 341, src/application.scss */
+/* line 343, src/application.scss */
 footer#footer nav ul {
   float: right;
   margin: 0;
 }
-/* line 345, src/application.scss */
+/* line 347, src/application.scss */
 footer#footer nav ul li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 350, src/application.scss */
+/* line 352, src/application.scss */
 footer#footer nav ul li + li {
   margin-left: 1em;
 }

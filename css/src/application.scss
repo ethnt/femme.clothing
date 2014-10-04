@@ -290,6 +290,8 @@ footer#footer {
     @media (min-width: $tablet-large) {
       @include container;
 
+      padding-bottom: rhythm(2);
+
       section {
         @include span(8 of 12);
       }

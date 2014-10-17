@@ -19,7 +19,7 @@
   {% endif %}
 
   <div class="non-featured">
-    {% for current in posts offset:1 limit:5 %}
+    {% for current in posts offset:1 %}
       {% assign type = "non-featured" %}
       {% include 'includes/post-excerpt' %}
     {% endfor %}
